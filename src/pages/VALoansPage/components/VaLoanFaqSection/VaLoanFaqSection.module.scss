@@ -1,0 +1,94 @@
+.VaLoanFaqSection {
+  padding: 6rem 30rem 0 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+
+  .FaqContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+
+    .HeadingWrap {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 4rem;
+
+      .heading {
+        color: var(--ion-color-secondary);
+
+        span {
+          color: var(--ion-color-primary);
+        }
+      }
+
+      .para {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+    }
+
+    .FaqWrap {
+      margin-bottom: 8rem;
+    }
+  }
+
+  .QuesAnsWrap {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    border-bottom: 1px solid rgba(34, 34, 34, 0.5);
+
+    .question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+
+      .CaretIconRotate {
+        rotate: -180deg;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .ScrollIcon {
+    width: 24px;
+    height: 48px;
+    border: 4px solid rgba(0, 40, 104, 0.5);
+    border-radius: 32px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    .scroller {
+      width: 8px;
+      height: 8px;
+      background-color: rgba(0, 40, 104, 0.8);
+      border-radius: 50%;
+      position: absolute;
+      animation: scroll 1.5s linear infinite;
+    }
+
+    @keyframes scroll {
+      0%,
+      100% {
+        top: 20%;
+      }
+      50% {
+        top: 60%;
+      }
+    }
+  }
+}

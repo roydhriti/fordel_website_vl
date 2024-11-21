@@ -1,0 +1,159 @@
+@import "./assets/scss/media-queries.scss";
+@import "./assets/scss/mixin.scss";
+@import "./assets/theme/variable.scss";
+@import "./assets/theme/variable.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 8px;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+
+  // @include lt-sm {
+  //   overflow-x: hidden;
+  // }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.sv1,
+.sv2,
+.overline,
+.body,
+.bodyv2,
+.sub,
+.caption,
+.overline,
+.lg,
+.md,
+.sm {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+h1 {
+  @include h1;
+}
+
+h2 {
+  @include h2;
+}
+
+h3 {
+  @include h3;
+}
+
+h4 {
+  @include h4;
+}
+
+h5 {
+  @include h5;
+}
+
+h6 {
+  @include h6;
+}
+
+.body {
+  @include p;
+  // @include lt-sm {
+  //   font-size: 1.75rem;
+  //   font-style: normal;
+  //   font-weight: 400;
+  // }
+}
+
+.bodyv2 {
+  @include pv2;
+}
+
+.sub {
+  @include sub;
+  // @include lt-sm {
+  //   font-size: 2rem;
+  //   font-style: normal;
+  //   font-weight: 600;
+  // }
+}
+
+.subv2 {
+  @include subv2;
+}
+
+.caption {
+  @include caption;
+}
+
+.overline {
+  @include overline;
+}
+
+button {
+  cursor: pointer;
+}
+
+.mid {
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 600;
+  background: transparent;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*button*/
+.lg {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28.8px;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+.md {
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25.65px;
+  background: transparent;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+
+  // @include lt-sm {
+  //   font-size: 1.5rem;
+  //   font-style: normal;
+  //   font-weight: 700;
+  // }
+}
+
+.sm {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+}

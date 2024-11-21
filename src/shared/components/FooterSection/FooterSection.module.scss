@@ -1,0 +1,117 @@
+.FooterSection {
+  background-color: var(--ion-color-secondary);
+  height: 535px;
+  padding: 7rem 8rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .LeftDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .FooterAboutUsPara {
+      margin: 4rem 0 13rem 0;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      .AboutUsContent {
+        width: 52.5rem;
+      }
+
+      .AboutUsRoute {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+
+        a {
+          color: #fff;
+        }
+
+        .dot {
+          background-color: var(--ion-color-primary);
+          border-radius: 50%;
+          width: 1.25rem;
+          height: 1.25rem;
+        }
+      }
+    }
+
+    .SocialMediaDiv {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+
+      img {
+        width: 5rem;
+        height: 5rem;
+      }
+
+      .SideBySide {
+        display: flex;
+        gap: 1.25rem;
+      }
+    }
+  }
+
+  .RightDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20rem;
+
+    .TabWrap {
+      display: flex;
+      align-items: center;
+      gap: 5rem;
+
+      a {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        color: #fff;
+
+        .dot {
+          background-color: var(--ion-color-primary);
+          border-radius: 50%;
+          width: 0.5rem;
+          height: 0.5rem;
+        }
+      }
+    }
+
+    .ContactLocationWrap {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 6rem;
+
+      .ContactWrap {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .LocationWrap {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .content {
+          display: flex;
+          align-items: flex-end;
+          // justify-content: space-between;
+          gap: 215px;
+
+          .CopyWriteText {
+            color: #8f9fa3;
+            width: 19%;
+          }
+        }
+      }
+    }
+  }
+}

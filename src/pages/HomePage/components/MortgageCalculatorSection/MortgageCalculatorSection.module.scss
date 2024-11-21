@@ -1,0 +1,15 @@
+.MortgageCalculatorSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8rem;
+  margin: 30rem 0;
+
+  .HeadingWrap {
+    color: var(--ion-color-secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}

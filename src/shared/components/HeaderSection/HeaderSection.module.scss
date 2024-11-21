@@ -1,0 +1,64 @@
+.HeaderSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 90px;
+  padding: 3rem 20rem;
+  background-color: var(--ion-color-light);
+  border-bottom: 0.5px solid rgba(34, 34, 34, 0.16);
+  position: fixed;
+  z-index: 10000;
+
+  .TabButtonWrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+
+    .TabWrap {
+      display: flex;
+      align-items: center;
+      gap: 5rem;
+
+      .active {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+        height: 21px;
+
+        .border {
+          width: 40px;
+          height: 4px;
+          border-radius: 86px;
+          background: var(--ion-color-primary);
+        }
+      }
+    }
+
+    .HeaderButton {
+      padding: 1rem 4rem;
+      background-color: var(--ion-color-primary);
+      border-radius: 12.5rem;
+      color: #fff;
+      border: none;
+
+      &:hover {
+        animation: zoomIn 1s forwards;
+      }
+    }
+  }
+
+  @keyframes zoomIn {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+    50% {
+      transform: scale3d(1.2, 1.2, 1.2);
+    }
+    100% {
+      transform: scale3d(1.2, 1.2, 1.2);
+    }
+  }
+}

@@ -1,0 +1,185 @@
+.ServicesOverviewSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5.625rem;
+  padding-top: 19.25rem;
+  position: relative;
+
+  .HeadingWrap {
+    color: var(--ion-color-secondary);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: sticky;
+    top: 0;
+
+    span {
+      color: var(--ion-color-primary);
+    }
+  }
+
+  .ServicesWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+
+    .FirstRow {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+      justify-content: center;
+      column-gap: 5rem;
+    }
+
+    .SecondRow {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+      justify-content: center;
+      column-gap: 5rem;
+    }
+
+    .ServiceCard {
+      box-shadow: 0px 1px 4px 0px #0e1f350f, 0px 0px 2px 0px #0e1f351f;
+      border-radius: 3rem;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 2rem;
+      width: auto;
+      height: auto;
+
+      .ContentWrap {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 1rem;
+
+        p {
+          width: 41rem;
+        }
+      }
+
+      .ButtonWrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        border-radius: 2rem;
+        box-shadow: 0px 1px 4px 0px #0e1f350f, 0px 0px 2px 0px #0e1f351f;
+        border: none;
+        background-color: transparent;
+        padding: 1.5rem 3rem;
+        color: var(--ion-color-secondary);
+        transition: background-color 0.2s ease-out;
+
+        .ArrowIcon {
+          transition: all 0.2s ease-out;
+
+          img {
+            filter: none;
+            transition: filter 0.3s;
+            transition: all 0.2s ease-out;
+          }
+        }
+
+        &:hover {
+          background-color: var(--ion-color-secondary);
+          color: var(--ion-color-light);
+          // transition: all 0.3s;
+
+          .ArrowIcon img {
+            rotate: -45deg;
+            filter: invert(100%) brightness(200%);
+          }
+        }
+      }
+    }
+
+    // .ScrollIcon {
+    //   width: 24px;
+    //   height: 48px;
+    //   border: 4px solid rgba(0, 40, 104, 0.5);
+    //   border-radius: 32px;
+    //   position: absolute;
+    //   bottom: 185px;
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+    //   cursor: pointer;
+    //   z-index: 1;
+
+    //   .scroller {
+    //     width: 8px;
+    //     height: 8px;
+    //     background-color: rgba(0, 40, 104, 0.8);
+    //     border-radius: 50%;
+    //     position: absolute;
+    //     animation: scroll 1.5s linear infinite;
+    //   }
+
+    //   @keyframes scroll {
+    //     0%,
+    //     100% {
+    //       top: 20%;
+    //     }
+    //     50% {
+    //       top: 60%;
+    //     }
+    //   }
+    // }
+  }
+
+  .ScrollIcon {
+    width: 24px;
+    height: 48px;
+    border: 4px solid rgba(0, 40, 104, 0.5);
+    border-radius: 32px;
+    position: absolute;
+    bottom: -185px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    .scroller {
+      width: 8px;
+      height: 8px;
+      background-color: rgba(0, 40, 104, 0.8);
+      border-radius: 50%;
+      position: absolute;
+      animation: scroll 1.5s linear infinite;
+    }
+
+    @keyframes scroll {
+      0%,
+      100% {
+        top: 20%;
+      }
+      50% {
+        top: 60%;
+      }
+    }
+  }
+
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   left: 0;
+  //   bottom: 12.5rem;
+  //   width: 100%;
+  //   height: 38rem;
+  //   display: block;
+  //   background: linear-gradient(
+  //     180deg,
+  //     rgba(255, 255, 255, 0) 0%,
+  //     rgba(255, 255, 255, 0.386359) 17.57%,
+  //     rgba(255, 255, 255, 0.716478) 54.17%,
+  //     #ffffff 100%
+  //   );
+  // }
+}
